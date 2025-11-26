@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo Fernando Teles</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#dados-pessoais">Dados Pessoais</a>
+    <a href="#formacao">Formação</a>
+    <a href="#conhecimentos">Conhecimentos</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#idiomas">Idiomas</a>
+    <a href="#portfolio">Portfólio</a>
+  </div>
+
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+
+    <header id="cabecalho-principal">
+      <h1 id="titulo-principal">Currículo Fernando Teles</h1>
+      <img src="img/foto.jpg" alt="Foto de Fernando Teles" class="foto-perfil">
+      <p id="introducao">
+        Sou Fernando Teles, estudante do curso Técnico Integrado ao Ensino Médio em Programação de Jogos Digitais pelo Instituto Federal do Paraná. Apaixonado por tecnologia e criação digital, tenho me dedicado a desenvolver habilidades em linguagens de programação como C++, C#, HTML, JavaScript e CSS.
+      </p>
+    </header>
+
+    <main class="conteudo-principal">
+      <section id="dados-pessoais">
+        <h2>Dados Pessoais</h2>
+        <p><strong>Nome:</strong> Fernando Teles</p>
+        <p><strong>Email:</strong> nandoteles1611@gmail.com</p>
+        <p><strong>Telefone:</strong> (41) 997100985</p>
+        <p><strong>Cidade/Estado:</strong> Curitiba, Paraná</p>
+      </section>
+
+      <section id="formacao">
+        <h2>Formação</h2>
+        <p><strong>Curso:</strong> Técnico Integrado ao Ensino Médio em Programação de Jogos Digitais</p>
+        <p><strong>Instituição:</strong> Instituto Federal do Paraná, Curitiba</p>
+        <p><strong>Período:</strong> Março de 2022 – Atual</p>
+        <p><strong>Status:</strong> Cursando o 4º ano</p>
+      </section>
+
+      <section id="conhecimentos">
+        <h2>Conhecimentos</h2>
+        <ul>
+          <li>C++</li>
+          <li>C#</li>
+          <li>HTML</li>
+          <li>JavaScript</li>
+          <li>CSS</li>
+        </ul>
+      </section>
+
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+          <li>Aprendo rapidamente</li>
+          <li>Facilidade com tecnologias</li>
+          <li>Facilidade em comunicação</li>
+          <li>Dedicado</li>
+        </ul>
+      </section>
+
+      <section id="idiomas">
+        <h2>Idiomas</h2>
+        <ul>
+          <li>Português: Fluente</li>
+          <li>Inglês: Intermediário/Avançado</li>
+          <li>Espanhol: Em curso</li>
+        </ul>
+      </section>
+
+      <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="carrossel">
+          <button class="btn-anterior" onclick="mudarImagens(-1)">&#10094;</button>
+          <div class="carrossel-imagens" id="carrossel-imagens"></div>
+          <button class="btn-proximo" onclick="mudarImagens(1)">&#10095;</button>
+        </div>
+      </section>
+    </main>
+
+    <footer id="rodape-principal">
+      <p>&copy; 2025 Fernando Teles - Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
